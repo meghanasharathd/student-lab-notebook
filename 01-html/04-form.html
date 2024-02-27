@@ -4,12 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Exercise 04 - Form</title>
   </head>
+  <title>Exercise 04 - Form</title>
+  <style>
+    .favorite-character-container {
+      position: relative; /* Set position to relative */
+      display: inline-block;
+      border: 1px solid rgb(68, 66, 66);
+      padding: 4px;
+      margin-bottom: 10px;
+      width: 400px;
+    }
+  </style>
   <body>
     <main>
+      <h2>Form</h2>
       <form action="/submit">
         <!-- Add your code here -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" /><br />
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" /><br /><br /><br />
+        <div class="favorite-character-container">
+          <label> Favorite Character:</label><br />
+          <input type="radio" id="spongebob" name="spongebob" />
+          <label for="spongebob">Spongebob</label><br />
+          <input type="radio" id="sandy" name="sandy" />
+          <label for="sandy">Sandy</label><br />
+          <input type="radio" id="patrick" name="patrick" />
+          <label for="patrick">Patrick</label>
+        </div>
+        <br /><br /><br />
+
+        <div class="favorite-character-container">
+          <label> Favorite Character?</label><br />
+          <input type="checkbox" id="yess" name="yess" />
+          <label for="yess">Yes, I have watched all episodes!</label><br />
+          <input type="checkbox" id="yes" name="yes" />
+          <label for="yes"> Yes, it's got the best memes. </label>
+        </div>
+        <br /><br /><br />
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
       </form>
     </main>
   </body>

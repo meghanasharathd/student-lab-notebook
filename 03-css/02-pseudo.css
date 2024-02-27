@@ -2,3 +2,6 @@
   width: 600px;
   margin: 40px auto;
 }
+p::first-letter {
+  font-size:250%;
+} 

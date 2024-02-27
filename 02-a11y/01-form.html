@@ -8,6 +8,14 @@
   </head>
   <body>
     <h1>01 - Form</h1>
+    <style>
+    .div-container {
+      border: 1px solid black;
+      padding: 0px;
+      margin-bottom: 10px;
+      width: 300px;
+    }
+  </style>
     <form action="/submit">
       <span>Name</span>
       <input type="text" />
@@ -17,10 +25,12 @@
         <input type="text" />
       </label>
       <br /><br />
+      <div class = "div-container">
       <span>Favorite Character</span>
       <div><input type="radio" id="spongebob" />Spongebob</div>
       <div><input type="radio" id="patrick" />Patrick</div>
       <div><input type="radio" id="sandy" />Sandy</div>
+      </div>
       <br />
       <button>Submit</button>
     </form>
