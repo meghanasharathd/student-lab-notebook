@@ -20,9 +20,11 @@ body {
 
 .section {
   display: inline-block;
-  width: 75%;
+  width: 71%;
   height: 300px;
   background-color: var(--orange);
+  box-shadow: -5px 0 0 0 black, /* Adjust shadow position and color */
+  5px 0 0 0 black;
 }
 
 .aside {
@@ -30,4 +32,6 @@ body {
   width: 25%;
   height: 300px;
   background-color: var(--gold);
+  box-shadow: -5px 0 0 0 black, /* Adjust shadow position and color */
+  5px 0 0 0 black;
 }
