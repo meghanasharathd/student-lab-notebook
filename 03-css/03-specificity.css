@@ -1,25 +1,71 @@
-/* Specificity Exercise */
+/* Specificity Exercise 
+Let's assign weights to each type of component in the selector 
+Let ID selectors have a weight of 100
+Class selectors (includes pseudo class) have a weight of 10
+Type and element selectors have a weight of 1
+*/
 
 nav .list-item > a {
   color: var(--purple);
 }
+/* 
+=> nav, a = 1+1 
+   .list-item = 10
+   Specificity for this is 12
+*/
 
 #main::first-letter {
   color: var(--purple);
 }
 
+/*
+=> #main = 100
+::first-letter = 1
+  Total Specificty is 101
+*/
+
 input[type] {
   color: var(--purple);
 }
+
+/*
+input = 1
+[type] = 10
+ Total specifity is 11
+*/
 
 section .main::first-line {
   color: var(--purple);
 }
 
+/*
+section = 1
+.main = 10
+::first-line = 1
+Total specificity for this is 12
+*/
+
 nav ul.menu li#first a:not([class='visited']) {
   color: var(--purple);
 }
 
+/*
+
+#first = 100
+not([class='visited'] = 10
+.menu = 10
+nav = 1
+ul = 1
+li = 1
+a = 1
+Total specificity for this is 124
+*/
+
 div ol li ul li ol li ul li a {
   color: var(--purple);
 }
+
+/*
+div, ol, li, ul, li, ol, li, ul, li, a = 1*10= 10
+Total specificity for this is 10
+*/

@@ -11,16 +11,41 @@
 
 .static {
   background-color: var(--darkviolet);
+  width: 50%; /* Set the width of each box to 50% */
+  width: 300px;
+  height: 400px;
+  margin-right: 5px;
+  float: left;
+  margin-top: 65px;
 }
 
 .relative {
   background-color: var(--purple);
+  width: 50%; /* Set the width of each box to 50% */
+  width: 300px;
+  height: 400px;
+  margin-left: 5px;
+  float: left;
+  margin-top: 65px;
+
 }
 
 .absolute {
   background-color: var(--maroon);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px; /* Adjust padding as needed */
+  text-align: left; /* Center the content horizontally */
 }
 
 .fixed {
   background-color: var(--darkgolden);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px; /* Adjust padding as needed */
+  text-align: left; /* Center the content horizontally */
 }
