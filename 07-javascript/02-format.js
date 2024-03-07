@@ -4,6 +4,10 @@ const formatItems = (input) => {
   // for reference, see the MDN Number page:
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
 
+    const format = input.map(input => input.toFixed(3));
+    input = format.join(', ');
+  
+
   return input;
 };
 
