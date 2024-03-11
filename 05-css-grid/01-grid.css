@@ -3,15 +3,43 @@
 }
 
 /* Grid Container 1 */
+.grid-container-1{
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 1fr1fr 2fr 1fr;
+  gap: 10px;
+  height: 400px;
+}
+
 
 /* Grid Container 2 */
+
+.grid-container-2{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr;
+  gap: 5px;
+  height: 400px;
+}
+
 
 /* use height: 400px; on the container */
 
 /* Grid Container 3 */
-
+.grid-container-3{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 8em);
+  gap: 10px;
+  }
 /* use height: 400px; on the container */
 
 /* Grid Container 4 */
+.grid-container-4{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 8em);
+  gap: 10px;
+  }
 
 /* use height: 600px; on the container */
